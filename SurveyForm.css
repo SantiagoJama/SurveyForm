@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+/* 
+Aclaración importante:
+
+    Desarrollado por; Santiago Jama, como solución a los proyectos 
+    propuestos en el curso llevado a cabo en FreeCodeCamp. 
+
+    Los diseños pertenecen a la organización FreeCodeCamp. 
+    FreeCodeCamp provee los diseños como muestra, según los requerimientos (user stories) de los proyectos.
+
+    Todo el HTML y el CSS es de mi autoría.
+*/
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: darkgrey;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    justify-items: center;
+}
+    .heading{
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+        #title, #description{
+            color: white;
+            text-align: center;
+        }
+     
+
+    .form-content{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 1em;
+        
+   
+    }
+                
+            #survey-form{
+                background-color: hsla(189, 48%, 31%,90%);
+                margin-top: 1.6em;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                border-radius:1%;
+                
+            }
+
+            .form-group{
+                margin-top: 1em;
+                width: 80%;
+                margin-bottom: 1em;
+            }
+
+            label{
+                font-size: 1.2rem;
+                color: white;
+                font-family: 'Roboto Slab';
+                
+                
+            }
+
+            input[type=text],input[type=email],input[type=number],select,textarea,option{
+                width: 100%;
+                padding: 12px 20px;
+                margin-top: .5em;
+                font-size: 1rem;
+                font-family: 'Roboto Slab';
+            }
+
+           .submit-button{
+               display: flex;
+               flex-direction: column;
+               flex-wrap: nowrap;
+               align-items: center;
+              
+           }
+           #submit{
+            width: 100%;
+            font-family: 'Roboto Slab';
+            font-size: 1rem;
+            padding:1em;
+        }
+
+        #submit:hover{
+            width: 100%;
+            font-family: 'Roboto Slab';
+            font-size: 1rem;
+            padding:1em;
+            background-color: black;
+            color:white;
+            cursor: pointer;
+        }
+           
+
+@media (max-width: 750px){
+    .form-content,#survey-form{
+        width: 100%;
+    }
+    header{
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+}
+
+@media (max-width: 850px){
+    .form-content,#survey-form{
+        width: 100%;
+    }
+    header{
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+}
+
+
+
+
+
